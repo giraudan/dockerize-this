@@ -1,0 +1,15 @@
+version: "3"
+services:
+  backend:
+    image: py_backend:latest
+    networks:
+      hiddennet:
+  webapp:
+    image: py_webapp:latest
+    ports:
+      - "8080:8080"
+    networks:
+      hiddennet:
+
+networks:
+  hiddennet:

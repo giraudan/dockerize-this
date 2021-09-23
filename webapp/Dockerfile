@@ -1,8 +1,8 @@
 FROM python:3.9.7-buster
-RUN useradd -m -U skysoft
+RUN useradd -m -U normaluser
 RUN mkdir -p /webapp
-RUN chown -R skysoft\: /webapp
-USER skysoft
+RUN chown -R normaluser\: /webapp
+USER normaluser
 WORKDIR /webapp
 ADD requirements.txt /webapp/requirements.txt
 RUN pip install --user -r requirements.txt

@@ -8,7 +8,7 @@ The backend just replies with a string containing the current date and time when
 
 The front-end, when you call `GET /`, calls the backend, makes a simple html page with the backend's reply, and replies with that page.
 
-1. Dockerize the backend
+1. Dockerize the back-end
 2. Dockerize the front-end
 3. Write a `docker-compose.yml` that runs both
 
